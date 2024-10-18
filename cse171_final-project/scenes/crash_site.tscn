@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bbbfsdkr7qsl8"]
+
+[node name="CrashSite" type="Node2D"]
+position = Vector2(-4, -3)
