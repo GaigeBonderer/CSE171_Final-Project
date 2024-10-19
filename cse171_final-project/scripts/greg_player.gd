@@ -6,6 +6,9 @@ var current_dir = "none"
 
 #print("Script Running")
 
+func _ready():
+	$AnimatedSprite2D.play("idle_down")
+
 func _physics_process(delta):
 		#print("Phys process")
 		player_movement(delta)

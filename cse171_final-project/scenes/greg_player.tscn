@@ -166,3 +166,5 @@ script = ExtResource("1_wy4ru")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7fv2k")
 animation = &"walking_left"
+
+[node name="Camera2D" type="Camera2D" parent="."]
