@@ -6,6 +6,9 @@ var current_dir = "none"
 
 #print("Script Running")
 
+func player():
+	pass
+
 func _ready():
 	$AnimatedSprite2D.play("idle_down")
 

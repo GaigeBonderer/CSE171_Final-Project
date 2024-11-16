@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://bbbfsdkr7qsl8"]
+[gd_scene load_steps=21 format=3 uid="uid://bbbfsdkr7qsl8"]
 
 [ext_resource type="Texture2D" uid="uid://bpu5bubc7rfgt" path="res://art/mystic_woods_free_2.2/sprites/tilesets/plains.png" id="1_3c02t"]
+[ext_resource type="Script" path="res://scripts/crash_site.gd" id="1_hrnx1"]
 [ext_resource type="Texture2D" uid="uid://blve75e272le0" path="res://art/mystic_woods_free_2.2/sprites/tilesets/grass.png" id="2_gsll7"]
 [ext_resource type="Texture2D" uid="uid://b1l727mfd1xbx" path="res://art/Colors.png" id="3_q23c3"]
 [ext_resource type="Texture2D" uid="uid://b7lpd2386v5qa" path="res://art/mystic_woods_free_2.2/sprites/tilesets/walls/walls.png" id="3_s06ga"]
@@ -638,8 +639,12 @@ sources/5 = SubResource("TileSetAtlasSource_qftc4")
 sources/10 = SubResource("TileSetAtlasSource_sq8nb")
 sources/11 = SubResource("TileSetAtlasSource_oop7v")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cl7sk"]
+size = Vector2(230.5, 10)
+
 [node name="CrashSite" type="Node2D"]
 position = Vector2(-4, -3)
+script = ExtResource("1_hrnx1")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_itjfj")
@@ -657,3 +662,17 @@ layer_4/tile_data = PackedInt32Array(-393227, 3, 5, -131082, 3, 5, 262133, 3, 5,
 
 [node name="Greg_Player" parent="." instance=ExtResource("6_jh8mi")]
 position = Vector2(65, 53)
+
+[node name="Collisions" type="StaticBody2D" parent="."]
+
+[node name="World Border" type="CollisionPolygon2D" parent="Collisions"]
+polygon = PackedVector2Array(-262, -259, -164, -264, -151, -242, -123, -245, -114, -225, 120, -226, 144, -251, 272, -248, 281, -234, 278, 260, -117, 262, -120, 244, -247, 248, -274, 218, -264, -248, -284, -247, -316, -29, -299, 234, -266, 282, 304, 283, 334, 43, 296, -278, -271, -275, -267, -252)
+
+[node name="trans_road_2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trans_road_2"]
+position = Vector2(0.25, -220)
+shape = SubResource("RectangleShape2D_cl7sk")
+
+[connection signal="body_entered" from="trans_road_2" to="." method="_on_trans_road_2_body_entered"]
+[connection signal="body_exited" from="trans_road_2" to="." method="_on_trans_road_2_body_exited"]
