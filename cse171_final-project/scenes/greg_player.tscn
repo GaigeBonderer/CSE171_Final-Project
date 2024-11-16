@@ -1,7 +1,10 @@
-[gd_scene load_steps=20 format=3 uid="uid://drull48ghq03o"]
+[gd_scene load_steps=21 format=3 uid="uid://drull48ghq03o"]
 
 [ext_resource type="Script" path="res://scripts/greg_player.gd" id="1_wy4ru"]
 [ext_resource type="Texture2D" uid="uid://cy18gdosu4if0" path="res://art/Player/M_12.png" id="2_i0wvc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i457w"]
+radius = 5.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bygu3"]
 atlas = ExtResource("2_i0wvc")
@@ -162,9 +165,11 @@ animations = [{
 script = ExtResource("1_wy4ru")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_i457w")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7fv2k")
 animation = &"walking_left"
+offset = Vector2(0, -5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
