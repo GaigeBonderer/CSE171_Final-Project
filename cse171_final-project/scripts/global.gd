@@ -1,6 +1,6 @@
 extends Node
 
-var current_scene = "crash_site"
+var current_scene = "start_screen"
 
 var transition_scene = false
 
@@ -16,7 +16,12 @@ func finish_changescenes():
 		transition_scene = false
 		if current_scene == "crash_site":
 			current_scene = "road_2"
-			print("Finish_Changescenes all true -- G Script func 12")
+			print("Finish_Changescenes road change -- G Script func 12")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+		elif current_scene == "start_screen":
+			current_scene = "crash_site"
+			print("Finish_Changescenes Start button -- G Script func 12")
 			print("transition_scene Status: " + str(transition_scene))
 			print("current_scene Status: " + str(current_scene))
 		else:
