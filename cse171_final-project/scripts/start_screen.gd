@@ -27,4 +27,9 @@ func _on_options_pressed() -> void:
 
 
 func _on_quit_pressed() -> void:
-	pass # Replace with function body.
+	print("Quit button pressed")
+	get_tree().quit()
+	#pass # Replace with function body.
+
+	
+	
