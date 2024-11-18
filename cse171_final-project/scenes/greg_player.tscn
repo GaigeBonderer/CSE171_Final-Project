@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/greg_player.gd" id="1_wy4ru"]
 [ext_resource type="Texture2D" uid="uid://cy18gdosu4if0" path="res://art/Player/M_12.png" id="2_i0wvc"]
-[ext_resource type="AudioStream" uid="uid://cjlah6n46kam3" path="res://SFX/footsetps.wav" id="3_yfmdr"]
+[ext_resource type="AudioStream" uid="uid://cjlah6n46kam3" path="res://audio/SFX/footsetps.wav" id="3_yfmdr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i457w"]
 radius = 5.0

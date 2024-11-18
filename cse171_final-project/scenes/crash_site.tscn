@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://d3keisoi7gvhl" path="res://art/Forest BETA V3/Settlement.png" id="5_mshha"]
 [ext_resource type="Texture2D" uid="uid://cctacje7t4jdp" path="res://art/car.png" id="6_cg5g1"]
 [ext_resource type="PackedScene" uid="uid://drull48ghq03o" path="res://scenes/greg_player.tscn" id="6_jh8mi"]
-[ext_resource type="AudioStream" uid="uid://cjlah6n46kam3" path="res://SFX/footsetps.wav" id="11_3yxdx"]
+[ext_resource type="AudioStream" uid="uid://c1y8wxs2cqv44" path="res://audio/BackgroundMusic/scarymusic.wav" id="11_ib5tv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hcvtx"]
 texture = ExtResource("1_3c02t")
@@ -675,9 +675,9 @@ polygon = PackedVector2Array(-262, -259, -164, -264, -151, -242, -123, -245, -11
 position = Vector2(0.25, -220)
 shape = SubResource("RectangleShape2D_cl7sk")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("11_3yxdx")
-bus = &"sfx"
+[node name="AudioStreamPlayer_BGM" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_ib5tv")
+bus = &"music"
 
 [connection signal="body_entered" from="trans_road_2" to="." method="_on_trans_road_2_body_entered"]
 [connection signal="body_exited" from="trans_road_2" to="." method="_on_trans_road_2_body_exited"]
