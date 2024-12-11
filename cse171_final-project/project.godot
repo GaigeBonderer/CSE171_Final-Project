@@ -26,6 +26,7 @@ general/balloon_path="res://art/balloon.tscn"
 
 [display]
 
+window/size/mode=3
 window/stretch/scale=4.0
 
 [editor_plugins]

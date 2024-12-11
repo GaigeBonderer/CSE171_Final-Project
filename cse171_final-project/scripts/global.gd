@@ -14,6 +14,8 @@ var maze_entered_already = false
 var moon_already_spotted = false
 var chase_started = false
 
+var enddialogue = false
+var enddialogue_jumpscare = false
 
 var aggro = false
 
@@ -25,6 +27,8 @@ var player_exit_road_posx = 0
 var player_exit_road_posy = 0
 var player_start_road_posx = 0
 var player_start_road_posy = 0
+	
+		
 
 func finish_changescenes():
 	print("Finish_Changescenes called -- G Script func 13")

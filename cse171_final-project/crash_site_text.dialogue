@@ -3,6 +3,7 @@
 if global.crash_site_text == true:
 	Ego: What.. what happened?
 	Ego: ... Where am I?
+	Ego: I need to find help...
 	set global.crash_site_text = false
 	set global.cutscene = false
 
@@ -103,6 +104,79 @@ HIM: You will die here.
 set global.aggro = true
 set global.chase_started = true
 set global.cutscene = false
+
+=> END
+
+~ Finale
+
+Ego: ...
+Ego: Ugh...
+Ego: Am I dead?
+HIM: You have been dead for a long time.
+Ego: What? Who is that?
+HIM: Don't you remember-
+HIM: -who you are Greg?
+Greg: Oh yes...
+Greg: I'm Greg. Thats right...
+HIM: Do you Remember what you did Greg?
+Greg: All I remember is waking-
+Greg: -up in the forest.
+Greg: Getting out of my car...
+Greg: I was so confused.
+Greg: I was so alone...
+HIM: You were not alone Greg.
+Greg: What?
+HIM: How could you forget-
+HIM: -your sweet wife Athena.
+Greg: ATHENA! Where is she!?
+HIM: She died Greg.
+HIM: She was dead as soon as-
+HIM: -you decided to get into your car.
+HIM: After a night at the bar.
+HIM: She begged you to get-
+HIM: -an Uber for you two.
+HIM: But you were "Just fine".
+Greg: Oh my God...
+HIM: Funny.
+HIM: That is what she yelled when-
+HIM: -she saw you vere off into that boulder.
+HIM: So Drunk you didn't even-
+HIM: -know you were off the road.
+HIM: You both died that night...
+Greg: ...
+Greg: ...
+Greg: Well, if I am here is Athena here?
+HIM: No Greg.
+HIM: The innocent do not come here.
+Greg: Where am I?
+HIM: I think you know...
+Greg: Oh...
+Greg: Are you the one who-
+Greg: -was following me?
+HIM: No.
+HIM: To know him you have to-
+HIM: look in the mirror.
+Greg: ...
+Greg: Then who are you?
+HIM: The Fallen.
+Greg: Oh my god...
+HIM: He will not listen to-
+HIM: -your plight anymore.
+HIM: Not here.
+Greg: *sobbing*
+HIM: Do you want to see you wife?
+HIM: one last time?
+- Yes! I need to see her face one last time.
+	set global.transition_scene = true
+	set global.current_scene = "jump_scare"
+	set global.enddialogue_jumpscare = true
+	set global.cutscene = true
+- No... I cant bear what I did to her.
+	set global.transition_scene = true
+	set global.current_scene = "start_screen"
+	set global.enddialogue = true
+	set global.crash_site_text = true
+
 
 => END
 
