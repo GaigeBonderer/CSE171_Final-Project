@@ -43,3 +43,11 @@ func _on_spawn_shadow_man_body_entered(body: Node2D) -> void:
 	if body.has_method("player") && global.shadow_man_already_triggered == false:
 		global.cutscene = true;
 		global.shadow_man_move = true
+
+
+func _on_no_return_body_entered(body: Node2D) -> void:
+	print("Player Past Entry: ", global.player_past_entry)
+	if global.player_past_entry == true:
+		print("No Return Entered -- R2 Script 43 ")
+		global.cutscene = true
+		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "no_return")

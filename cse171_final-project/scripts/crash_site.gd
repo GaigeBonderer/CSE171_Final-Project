@@ -47,3 +47,11 @@ func change_scene():
 	#print("Cutscene timer finished -- CS Script func 41")
 	#global.cutscene = false  # Set the global cutscene variable to true
 	#print("global.cutscene set to: ", global.cutscene, " -- CS Script func 43")
+
+
+func _on_no_return_body_entered(body: Node2D) -> void:
+	print("Player Past Entry: ", global.player_past_entry)
+	if global.player_past_entry == true && global.crash_site_text == false:
+		print("No Return Entered -- CS Script 55 ")
+		global.cutscene = true
+		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "no_return_crash_site")

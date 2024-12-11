@@ -2,6 +2,8 @@ extends Node2D
 @onready var musicAudioStreamBG = $AudioStreamPlayer_BGM
 var BGM = true
 
+@onready var playerWalkingAudioStream = $AudioStreamPlayer2D_walking
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -33,3 +35,11 @@ func change_scene():
 			print("Change Scene 2 -- R2 Script func 33")
 			get_tree().change_scene_to_file("res://scenes/road_3.tscn")
 			global.finish_changescenes()
+
+
+func _on_no_return_body_entered(body: Node2D) -> void:
+	print("Player Past Entry: ", global.player_past_entry)
+	if global.player_past_entry == true:
+		print("No Return Entered -- R2 Script 43 ")
+		global.cutscene = true
+		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "no_return")

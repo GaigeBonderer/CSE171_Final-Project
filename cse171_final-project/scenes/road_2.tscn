@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://ba526wdkielkq"]
+[gd_scene load_steps=25 format=3 uid="uid://ba526wdkielkq"]
 
 [ext_resource type="Script" path="res://scripts/road_2.gd" id="1_kuqxs"]
 [ext_resource type="Texture2D" uid="uid://bpu5bubc7rfgt" path="res://art/mystic_woods_free_2.2/sprites/tilesets/plains.png" id="1_uwyth"]
@@ -650,6 +650,9 @@ sources/6 = SubResource("TileSetAtlasSource_64tgg")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d7uha"]
 size = Vector2(230.5, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lu5ha"]
+size = Vector2(317, 12)
+
 [node name="Road2" type="Node2D"]
 script = ExtResource("1_kuqxs")
 
@@ -687,4 +690,11 @@ shape = SubResource("RectangleShape2D_d7uha")
 stream = ExtResource("10_u3n38")
 bus = &"music"
 
+[node name="no_return" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_return"]
+position = Vector2(-5, 249)
+shape = SubResource("RectangleShape2D_lu5ha")
+
 [connection signal="body_entered" from="trans_road_3" to="." method="_on_trans_road_3_body_entered"]
+[connection signal="body_entered" from="no_return" to="." method="_on_no_return_body_entered"]

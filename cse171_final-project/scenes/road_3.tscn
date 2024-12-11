@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://clg6drkfqwbu0"]
+[gd_scene load_steps=27 format=3 uid="uid://clg6drkfqwbu0"]
 
 [ext_resource type="Script" path="res://scripts/rode_3.gd" id="1_qq1us"]
 [ext_resource type="Texture2D" uid="uid://bpu5bubc7rfgt" path="res://art/mystic_woods_free_2.2/sprites/tilesets/plains.png" id="2_7xlj6"]
@@ -654,6 +654,9 @@ size = Vector2(230.5, 10)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_72oet"]
 size = Vector2(295, 16.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6m3v"]
+size = Vector2(317, 12)
+
 [node name="road_3" type="Node2D"]
 script = ExtResource("1_qq1us")
 
@@ -703,4 +706,11 @@ shape = SubResource("RectangleShape2D_72oet")
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="no_return" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_return"]
+position = Vector2(-5, 249)
+shape = SubResource("RectangleShape2D_l6m3v")
+
 [connection signal="body_entered" from="SpawnShadowMan" to="." method="_on_spawn_shadow_man_body_entered"]
+[connection signal="body_entered" from="no_return" to="." method="_on_no_return_body_entered"]

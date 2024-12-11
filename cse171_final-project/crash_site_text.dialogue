@@ -23,3 +23,22 @@ Ego: What was that thing?
 
 => END
 
+~ no_return
+
+Ego: I should keep moving forward...
+Ego: I need to find help.
+#set global.shadow_man_move = false
+set global.cutscene = false
+
+=> END
+
+~ no_return_crash_site
+
+Ego: I think I remember...
+Ego: The last town was miles ago.
+Ego: I should go north...
+#set global.shadow_man_move = false
+set global.cutscene = false
+
+=> END
+
