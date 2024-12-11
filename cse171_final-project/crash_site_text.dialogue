@@ -161,9 +161,16 @@ HIM: He will not listen to
 HIM: your plight anymore.
 HIM: Not here.
 Greg: *sobbing*
-HIM: Do you want to see you wife one last time?
-- Oh please, yes. I need to see her face one last time.
+HIM: Do you want to see you wife?
+HIM: one last time?
+- Yes! I need to see her face one last time.
+	set global.transition_scene = true
 - No... I cant bear what I did to her.
+	set global.transition_scene = true
+	set global.current_scene = "start_screen"
+	set global.enddialogue = true
+
+	
 
 
 => END

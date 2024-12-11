@@ -21,6 +21,11 @@ func _physics_process(delta):
 		global.crash_site_text_one_time = true
 		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "crash_site_text")
 		return
+	if global.enddialogue == true:
+		global.enddialogue = false
+		global.transition_scene = true
+		get_tree().change_scene_to_file("res://scenes/crash_site.tscn")
+		global.finish_changescenes()
 	player_movement(delta)
 		
 func player_movement(delta):
