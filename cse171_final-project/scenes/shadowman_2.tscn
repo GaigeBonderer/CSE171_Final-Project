@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://crxvjoevjk4y5"]
+[gd_scene load_steps=19 format=3 uid="uid://crxvjoevjk4y5"]
 
 [ext_resource type="Script" path="res://scripts/shadowman_2.gd" id="1_1lqr3"]
 [ext_resource type="Texture2D" uid="uid://cailykgl3h37t" path="res://art/Player/EVILShadowMan.png" id="2_3cutd"]
@@ -116,6 +116,9 @@ radius = 332.297
 [sub_resource type="CircleShape2D" id="CircleShape2D_hwd7b"]
 radius = 7.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ufqu8"]
+radius = 7.0
+
 [node name="shadowman2" type="CharacterBody2D"]
 collision_layer = 0
 collision_mask = 0
@@ -139,4 +142,11 @@ shape = SubResource("CircleShape2D_svrjk")
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_hwd7b")
 
+[node name="shadow_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="shadow_hitbox"]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_ufqu8")
+
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_entered" from="shadow_hitbox" to="." method="_on_shadow_hitbox_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://drull48ghq03o"]
+[gd_scene load_steps=23 format=3 uid="uid://drull48ghq03o"]
 
 [ext_resource type="Script" path="res://scripts/greg_player.gd" id="1_wy4ru"]
 [ext_resource type="Texture2D" uid="uid://cy18gdosu4if0" path="res://art/Player/M_12.png" id="2_i0wvc"]
@@ -162,12 +162,16 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_jnroj"]
+radius = 6.0
+
 [node name="Greg_Player" type="CharacterBody2D"]
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_wy4ru")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_i457w")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -179,3 +183,11 @@ offset = Vector2(0, -5)
 
 [node name="AudioStreamPlayer2D_walking" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_yfmdr")
+
+[node name="player_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_jnroj")
+
+[connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
