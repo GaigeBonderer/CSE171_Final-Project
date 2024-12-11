@@ -18,8 +18,8 @@ func _physics_process(delta: float) -> void:
 		player_chase = true
 	if player_chase == true:
 		#print("Player Being Chased")
-		print("Player Position: x:", player.position.x, " y: ", player.position.y)
-		print("Shawdowman Position: x:", position.x, " y: ", position.y) 
+		#print("Player Position: x:", player.position.x, " y: ", player.position.y)
+		#print("Shawdowman Position: x:", position.x, " y: ", position.y) 
 		
 		if position.x < player.position.x && position.y < player.position.y:
 			#print("SHADOW MAN: walking 1")

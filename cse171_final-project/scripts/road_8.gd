@@ -29,8 +29,11 @@ func _on_trans_road_9_body_entered(body: Node2D) -> void:
 func change_scene():
 	if global.transition_scene == true:
 		print("Change Scene 1 -- R8 Script func 31")
+		print("Current Global Scene: ", global.current_scene)
 		if global.current_scene == "road_8":
 			print("Change Scene 2 -- R8 Script func 33")
+			global.chase_started = false
+			global.aggro = false
 			get_tree().change_scene_to_file("res://scenes/road_9.tscn")
 			global.finish_changescenes()
 

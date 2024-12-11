@@ -87,3 +87,22 @@ set global.aggro = true
 
 => END
 
+~ no_escape
+
+HIM: There is no escape...
+HIM: your just wasting time...
+set global.aggro = true
+set global.chase_started = true
+set global.cutscene = false
+
+=> END
+
+~ die_here
+
+HIM: You will die here.
+set global.aggro = true
+set global.chase_started = true
+set global.cutscene = false
+
+=> END
+

@@ -17,7 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://c1y8wxs2cqv44" path="res://audio/BackgroundMusic/scarymusic.wav" id="15_r0hy6"]
 [ext_resource type="PackedScene" uid="uid://crxvjoevjk4y5" path="res://scenes/shadowman_2.tscn" id="16_ameyx"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_05fpw"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wd8tj"]
 texture = ExtResource("1_p0aoa")
 0:0/0 = 0
 1:0/0 = 0
@@ -84,11 +84,11 @@ texture = ExtResource("1_p0aoa")
 0:11/0 = 0
 5:11/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qujqn"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nhliy"]
 texture = ExtResource("2_6l30c")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahlsp"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dxp0f"]
 texture = ExtResource("3_a4nkc")
 texture_region_size = Vector2i(17, 17)
 14:0/0 = 0
@@ -165,7 +165,7 @@ texture_region_size = Vector2i(17, 17)
 9:12/size_in_atlas = Vector2i(2, 2)
 9:12/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d180v"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cs1v6"]
 texture = ExtResource("4_ttvr0")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
@@ -192,7 +192,7 @@ texture_region_size = Vector2i(20, 20)
 1:3/size_in_atlas = Vector2i(2, 2)
 1:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_thnsm"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_73me0"]
 texture = ExtResource("5_l1ebn")
 0:0/0 = 0
 1:0/0 = 0
@@ -226,7 +226,7 @@ texture = ExtResource("5_l1ebn")
 4:5/0 = 0
 5:5/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_id1iu"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wpu1b"]
 texture = ExtResource("6_0bxaq")
 6:7/size_in_atlas = Vector2i(2, 2)
 6:7/0 = 0
@@ -249,7 +249,7 @@ texture = ExtResource("6_0bxaq")
 0:5/0 = 0
 0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-23.5, -12.25, -17.5, -24.5, -5, -32, 8.25, -30.75, 17.5, -25, 20, -14.25, 21.75, 2.25, 16.4545, 9.96881, 8.5, 13, 12.75, 21, 8.75, 25.5, -5.5, 25.25, -11.75, 22, -12, 13, -17, 11, -21.75, 1)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q30um"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yv4vc"]
 texture = ExtResource("7_jkw7o")
 2:0/0 = 0
 3:0/0 = 0
@@ -626,7 +626,7 @@ texture = ExtResource("7_jkw7o")
 1:35/0 = 0
 2:35/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_er20w"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tfla5"]
 texture = ExtResource("8_2ymox")
 margins = Vector2i(1, 0)
 texture_region_size = Vector2i(16, 20)
@@ -634,18 +634,18 @@ texture_region_size = Vector2i(16, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.75, -25.25, -10.25, -29.25, 0.25, -29.75, 10.75, -29, 15.25, -25, 18.25, -18.5, 18.5, 6.5, 18, 17.75, 12.25, 24.5, 1, 26.75, -9.75, 25.25, -17.75, 18, -18.5, 6.5, -18.25, -19)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5f8oh"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_svp2g"]
 texture = ExtResource("9_ul8s4")
 0:0/size_in_atlas = Vector2i(4, 3)
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tk3n8"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ua3fb"]
 texture = ExtResource("10_03vn4")
 0:0/size_in_atlas = Vector2i(7, 2)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -3.92862, 14.0308, -5.05108, 20.1587, -9.13443, 26.4583, -10.7093, 27.0883, -3.46478, 38.7249, -3.36739, 45.4597, -2.80615, 52.7557, 11.7859, -52.2867, 13.2292, -48.192, 7.24455, -51.6333, 3.36739, -46.5822, -3.92862)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_46os6"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xu83n"]
 texture = ExtResource("11_7r8qs")
 0:0/size_in_atlas = Vector2i(4, 2)
 0:0/0 = 0
@@ -654,25 +654,25 @@ texture = ExtResource("11_7r8qs")
 4:0/0 = 0
 4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-21.888, -2.80615, -14.592, -7.85723, -5.05108, -10.6634, -8, -3.92862, 14.0308, -3.648, 23.2911, 12.6277, -26.0972, 12.0665, -27.7809, 2.52554)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cd4xv"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w5gdn"]
 texture = ExtResource("12_clnbe")
 0:0/size_in_atlas = Vector2i(4, 4)
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_jdol6"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_05fpw")
-sources/1 = SubResource("TileSetAtlasSource_qujqn")
-sources/2 = SubResource("TileSetAtlasSource_thnsm")
-sources/3 = SubResource("TileSetAtlasSource_id1iu")
-sources/4 = SubResource("TileSetAtlasSource_q30um")
-sources/5 = SubResource("TileSetAtlasSource_er20w")
-sources/10 = SubResource("TileSetAtlasSource_ahlsp")
-sources/11 = SubResource("TileSetAtlasSource_d180v")
-sources/6 = SubResource("TileSetAtlasSource_5f8oh")
-sources/7 = SubResource("TileSetAtlasSource_tk3n8")
-sources/8 = SubResource("TileSetAtlasSource_46os6")
-sources/9 = SubResource("TileSetAtlasSource_cd4xv")
+sources/0 = SubResource("TileSetAtlasSource_wd8tj")
+sources/1 = SubResource("TileSetAtlasSource_nhliy")
+sources/2 = SubResource("TileSetAtlasSource_73me0")
+sources/3 = SubResource("TileSetAtlasSource_wpu1b")
+sources/4 = SubResource("TileSetAtlasSource_yv4vc")
+sources/5 = SubResource("TileSetAtlasSource_tfla5")
+sources/10 = SubResource("TileSetAtlasSource_dxp0f")
+sources/11 = SubResource("TileSetAtlasSource_cs1v6")
+sources/6 = SubResource("TileSetAtlasSource_svp2g")
+sources/7 = SubResource("TileSetAtlasSource_ua3fb")
+sources/8 = SubResource("TileSetAtlasSource_xu83n")
+sources/9 = SubResource("TileSetAtlasSource_w5gdn")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys2ae"]
 size = Vector2(230.5, 10)
@@ -708,10 +708,7 @@ layer_5/z_index = 999
 layer_5/tile_data = PackedInt32Array(917519, 6, 0, 917515, 6, 0, 917511, 6, 0, 917507, 6, 0, 983039, 6, 0, 983036, 6, 0, 983032, 6, 0, 983028, 6, 0, 983025, 6, 0, 851952, 6, 1342177280, 589808, 6, 1342177280, 327664, 6, 1342177280, 65520, 6, 1342177280, -196624, 6, 1342177280, -458768, 6, 1342177280, -720912, 6, 1342177280, -983056, 65547, 3, -786438, 6, 805306368, -786442, 6, 805306368, -786445, 6, 805306368, -786448, 6, 805306368, -786434, 6, 805306368, -851966, 6, 805306368, -851962, 6, 805306368, -851958, 6, 805306368, -851954, 6, 805306368, -851950, 6, 805306368, -655344, 6, 1610612736, -393200, 6, 1610612736, -131056, 6, 1610612736, 131088, 6, 1610612736, 393232, 6, 1610612736, 655376, 6, 1610612736, 917520, 6, 1610612736, -983057, 65547, 3, -983055, 65547, 3, -983054, 65547, 3, -983053, 65547, 3, -983052, 65547, 3, -983051, 65547, 3, -983050, 65547, 3, -983049, 65547, 3, -983048, 65547, 3, -983047, 65547, 3, -983046, 65547, 3, -983045, 65547, 3, -983044, 65547, 3, -983043, 65547, 3, -983042, 65547, 3, -983041, 65547, 3, -1048576, 65547, 3, -1048575, 65547, 3, -1048574, 65547, 3, -1048573, 65547, 3, -1048572, 65547, 3, -1048571, 65547, 3, -1048570, 65547, 3, -1048569, 65547, 3, -1114105, 65547, 3, -1114104, 65547, 3, -1114103, 65547, 3, -1114102, 65547, 3, -1114101, 65547, 3, -1114100, 65547, 3, -1114099, 65547, 3, -1114098, 65547, 3, -1114097, 65547, 3, -1114096, 65547, 3, -1114095, 65547, 3, -1048559, 65547, 3, -983023, 65547, 3, -983024, 65547, 3, -983025, 65547, 3, -983026, 65547, 3, -983027, 65547, 3, -983028, 65547, 3, -983029, 65547, 3, -983030, 65547, 3, -983031, 65547, 3, -1048567, 65547, 3, -1048568, 65547, 3, -983034, 65547, 1342177283, -983033, 65547, 3, -917520, 65547, 3, -917518, 65547, 3, -917516, 65547, 3, -917513, 65547, 3, -917514, 65547, 3, -917511, 65547, 3, -917509, 65547, 3, -917508, 65547, 3, -917505, 65547, 1342177283, -983038, 65547, 1342177283, -983036, 65547, 1342177283, 1245178, 196618, 9, 1245183, 196618, 9, 1179651, 196618, 9, 1179658, 196618, 9)
 
 [node name="shadowman2" parent="." instance=ExtResource("16_ameyx")]
-z_index = 2
 position = Vector2(-159, 53)
-collision_layer = 0
-collision_mask = 0
 
 [node name="Greg_Player" parent="." instance=ExtResource("14_bqxwy")]
 modulate = Color(0.45, 0.2475, 0.2475, 1)
