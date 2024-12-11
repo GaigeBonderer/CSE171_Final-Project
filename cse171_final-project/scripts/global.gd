@@ -7,8 +7,8 @@ var shadow_man_already_triggered = false
 
 var crash_site_text = true   #  Dialogue Specific
 var crash_site_text_one_time = false
-
 var player_past_entry = false
+var welcome_back_enetered_already = false
 
 var current_scene = "start_screen"
 
@@ -42,6 +42,20 @@ func finish_changescenes():
 			current_scene = "road_3"
 			player_past_entry = false
 			print("Finish_Changescenes road 3 Trans -- G Script func 31")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+			print("-------------------------------------------------------------------------------")
+		elif current_scene == "road_3":
+			current_scene = "road_4"
+			player_past_entry = false
+			print("Finish_Changescenes road 4 Trans -- G Script func 51")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+			print("-------------------------------------------------------------------------------")
+		elif current_scene == "road_4":
+			current_scene = "road_5"
+			player_past_entry = false
+			print("Finish_Changescenes road 4 Trans -- G Script func 51")
 			print("transition_scene Status: " + str(transition_scene))
 			print("current_scene Status: " + str(current_scene))
 			print("-------------------------------------------------------------------------------")

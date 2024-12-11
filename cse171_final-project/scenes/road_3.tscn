@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://clg6drkfqwbu0"]
+[gd_scene load_steps=28 format=3 uid="uid://clg6drkfqwbu0"]
 
 [ext_resource type="Script" path="res://scripts/rode_3.gd" id="1_qq1us"]
 [ext_resource type="Texture2D" uid="uid://bpu5bubc7rfgt" path="res://art/mystic_woods_free_2.2/sprites/tilesets/plains.png" id="2_7xlj6"]
@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cyeynktmgxlix" path="res://art/Dark_Trans.png" id="12_w5p2u"]
 [ext_resource type="PackedScene" uid="uid://ot1ms7huywc2" path="res://scenes/shadow_man.tscn" id="13_6402r"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_40ifj"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ar7jd"]
 texture = ExtResource("2_7xlj6")
 0:0/0 = 0
 1:0/0 = 0
@@ -81,11 +81,11 @@ texture = ExtResource("2_7xlj6")
 0:11/0 = 0
 5:11/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e34fw"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m6kii"]
 texture = ExtResource("3_2wq2u")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qlwyj"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_llrbs"]
 texture = ExtResource("4_c3f8w")
 texture_region_size = Vector2i(17, 17)
 14:0/0 = 0
@@ -162,7 +162,7 @@ texture_region_size = Vector2i(17, 17)
 9:12/size_in_atlas = Vector2i(2, 2)
 9:12/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pof1w"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_727r6"]
 texture = ExtResource("5_bt0jw")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
@@ -189,7 +189,7 @@ texture_region_size = Vector2i(20, 20)
 1:3/size_in_atlas = Vector2i(2, 2)
 1:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l1x3c"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qxeby"]
 texture = ExtResource("6_ymst7")
 0:0/0 = 0
 1:0/0 = 0
@@ -223,7 +223,7 @@ texture = ExtResource("6_ymst7")
 4:5/0 = 0
 5:5/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ysw5"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sm2fs"]
 texture = ExtResource("7_3hscw")
 6:7/size_in_atlas = Vector2i(2, 2)
 6:7/0 = 0
@@ -246,7 +246,7 @@ texture = ExtResource("7_3hscw")
 0:5/0 = 0
 0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-23.5, -12.25, -17.5, -24.5, -5, -32, 8.25, -30.75, 17.5, -25, 20, -14.25, 21.75, 2.25, 16.4545, 9.96881, 8.5, 13, 12.75, 21, 8.75, 25.5, -5.5, 25.25, -11.75, 22, -12, 13, -17, 11, -21.75, 1)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g6kh0"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tk0fa"]
 texture = ExtResource("8_dl1mq")
 2:0/0 = 0
 3:0/0 = 0
@@ -623,7 +623,7 @@ texture = ExtResource("8_dl1mq")
 1:35/0 = 0
 2:35/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a0imp"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p7wcw"]
 texture = ExtResource("9_2ywxc")
 margins = Vector2i(1, 0)
 texture_region_size = Vector2i(16, 20)
@@ -631,22 +631,22 @@ texture_region_size = Vector2i(16, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.75, -25.25, -10.25, -29.25, 0.25, -29.75, 10.75, -29, 15.25, -25, 18.25, -18.5, 18.5, 6.5, 18, 17.75, 12.25, 24.5, 1, 26.75, -9.75, 25.25, -17.75, 18, -18.5, 6.5, -18.25, -19)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p6v2t"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a185f"]
 texture = ExtResource("12_w5p2u")
 0:0/size_in_atlas = Vector2i(4, 3)
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_1833e"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_40ifj")
-sources/1 = SubResource("TileSetAtlasSource_e34fw")
-sources/2 = SubResource("TileSetAtlasSource_l1x3c")
-sources/3 = SubResource("TileSetAtlasSource_6ysw5")
-sources/4 = SubResource("TileSetAtlasSource_g6kh0")
-sources/5 = SubResource("TileSetAtlasSource_a0imp")
-sources/10 = SubResource("TileSetAtlasSource_qlwyj")
-sources/11 = SubResource("TileSetAtlasSource_pof1w")
-sources/6 = SubResource("TileSetAtlasSource_p6v2t")
+sources/0 = SubResource("TileSetAtlasSource_ar7jd")
+sources/1 = SubResource("TileSetAtlasSource_m6kii")
+sources/2 = SubResource("TileSetAtlasSource_qxeby")
+sources/3 = SubResource("TileSetAtlasSource_sm2fs")
+sources/4 = SubResource("TileSetAtlasSource_tk0fa")
+sources/5 = SubResource("TileSetAtlasSource_p7wcw")
+sources/10 = SubResource("TileSetAtlasSource_llrbs")
+sources/11 = SubResource("TileSetAtlasSource_727r6")
+sources/6 = SubResource("TileSetAtlasSource_a185f")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fxcmc"]
 size = Vector2(230.5, 10)
@@ -657,10 +657,14 @@ size = Vector2(295, 16.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l6m3v"]
 size = Vector2(317, 12)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbigq"]
+size = Vector2(230.5, 10)
+
 [node name="road_3" type="Node2D"]
 script = ExtResource("1_qq1us")
 
 [node name="TileMap" type="TileMap" parent="."]
+modulate = Color(0.45, 0.45, 0.45, 1)
 tile_set = SubResource("TileSet_1833e")
 format = 2
 layer_0/name = "Road_side"
@@ -678,6 +682,7 @@ layer_5/z_index = 999
 layer_5/tile_data = PackedInt32Array(917519, 6, 0, 917515, 6, 0, 917511, 6, 0, 917507, 6, 0, 983039, 6, 0, 983036, 6, 0, 983032, 6, 0, 983028, 6, 0, 983025, 6, 0, 851952, 6, 1342177280, 589808, 6, 1342177280, 327664, 6, 1342177280, 65520, 6, 1342177280, -196624, 6, 1342177280, -458768, 6, 1342177280, -720912, 6, 1342177280, -983056, 65547, 3, -786438, 6, 805306368, -786442, 6, 805306368, -786445, 6, 805306368, -786448, 6, 805306368, -786434, 6, 805306368, -851966, 6, 805306368, -851962, 6, 805306368, -851958, 6, 805306368, -851954, 6, 805306368, -851950, 6, 805306368, -655344, 6, 1610612736, -393200, 6, 1610612736, -131056, 6, 1610612736, 131088, 6, 1610612736, 393232, 6, 1610612736, 655376, 6, 1610612736, 917520, 6, 1610612736, -983057, 65547, 3, -983055, 65547, 3, -983054, 65547, 3, -983053, 65547, 3, -983052, 65547, 3, -983051, 65547, 3, -983050, 65547, 3, -983049, 65547, 3, -983048, 65547, 3, -983047, 65547, 3, -983046, 65547, 3, -983045, 65547, 3, -983044, 65547, 3, -983043, 65547, 3, -983042, 65547, 3, -983041, 65547, 3, -1048576, 65547, 3, -1048575, 65547, 3, -1048574, 65547, 3, -1048573, 65547, 3, -1048572, 65547, 3, -1048571, 65547, 3, -1048570, 65547, 3, -1048569, 65547, 3, -1114105, 65547, 3, -1114104, 65547, 3, -1114103, 65547, 3, -1114102, 65547, 3, -1114101, 65547, 3, -1114100, 65547, 3, -1114099, 65547, 3, -1114098, 65547, 3, -1114097, 65547, 3, -1114096, 65547, 3, -1114095, 65547, 3, -1048559, 65547, 3, -983023, 65547, 3, -983024, 65547, 3, -983025, 65547, 3, -983026, 65547, 3, -983027, 65547, 3, -983028, 65547, 3, -983029, 65547, 3, -983030, 65547, 3, -983031, 65547, 3, -1048567, 65547, 3, -1048568, 65547, 3, -983034, 65547, 1342177283, -983033, 65547, 3, -917520, 65547, 3, -917518, 65547, 3, -917516, 65547, 3, -917513, 65547, 3, -917514, 65547, 3, -917511, 65547, 3, -917509, 65547, 3, -917508, 65547, 3, -917505, 65547, 1342177283, -983038, 65547, 1342177283, -983036, 65547, 1342177283, 1179658, 196618, 9, 1179651, 196618, 9, 1245181, 196618, 9, 1179648, 196618, 9)
 
 [node name="Greg_Player" parent="." instance=ExtResource("10_ps307")]
+modulate = Color(0.45, 0.45, 0.45, 1)
 position = Vector2(1, 253)
 
 [node name="Collisions" type="StaticBody2D" parent="."]
@@ -696,9 +701,11 @@ stream = ExtResource("11_g6cnu")
 bus = &"music"
 
 [node name="ShadowMan" parent="." instance=ExtResource("13_6402r")]
+modulate = Color(0.45, 0.45, 0.45, 1)
 position = Vector2(-157, 52)
 
 [node name="SpawnShadowMan" type="Area2D" parent="."]
+modulate = Color(0.45, 0.45, 0.45, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SpawnShadowMan"]
 position = Vector2(-1, 125)
@@ -712,5 +719,12 @@ shape = SubResource("RectangleShape2D_72oet")
 position = Vector2(-5, 249)
 shape = SubResource("RectangleShape2D_l6m3v")
 
+[node name="trans_road_4" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trans_road_4"]
+position = Vector2(0.25, -220)
+shape = SubResource("RectangleShape2D_pbigq")
+
 [connection signal="body_entered" from="SpawnShadowMan" to="." method="_on_spawn_shadow_man_body_entered"]
 [connection signal="body_entered" from="no_return" to="." method="_on_no_return_body_entered"]
+[connection signal="body_entered" from="trans_road_4" to="." method="_on_trans_road_4_body_entered"]

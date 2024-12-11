@@ -39,16 +39,16 @@ func movescary(delta):
 			going_out = false
 			speed = 50
 	if global.shadow_man_move == true && going_out == false:
-		print("Move Scary 2 returning -- SM Script 46")
+		#print("Move Scary 2 returning -- SM Script 46")
 		current_dir = "left"
 		play_anim(1)
 		velocity.x = -speed
 		velocity.y = 0
-		print("Position x: ", position.x, " -- SM Script 51")
+		#print("Position x: ", position.x, " -- SM Script 51")
 		if !playerWalkingAudioStream.playing:
 			playerWalkingAudioStream.play()
 	if position.x <= -158 && going_out == false && shadow_stop == false:
-		print("Move Scary 2 End -- SM Script 55")
+		#print("Move Scary 2 End -- SM Script 55")
 		playerWalkingAudioStream.stop()
 		global.shadow_man_already_triggered = true
 		shadow_stop = true

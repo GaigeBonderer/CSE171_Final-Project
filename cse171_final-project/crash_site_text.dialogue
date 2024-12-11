@@ -42,3 +42,13 @@ set global.cutscene = false
 
 => END
 
+~ welcome_back
+
+Ego: Welcome back?...
+Ego: Is that...
+Ego: Blood?
+set global.welcome_back_enetered_already = true
+set global.cutscene = false
+
+=> END
+
