@@ -176,6 +176,7 @@ HIM: one last time?
 	set global.current_scene = "start_screen"
 	set global.enddialogue = true
 	set global.crash_site_text = true
+	set global.cutscene = false
 
 
 => END
