@@ -1,9 +1,14 @@
 extends CharacterBody2D
 
-const speed = 100 # Supposed to be 50 100 for testing
+var speed = 25 # Supposed to be 50 100 for testing
 @onready var playerWalkingAudioStream = $AudioStreamPlayer2D_walking
 
 var current_dir = "none"
+
+var going_out = true
+
+var shadow_stop = false
+
 
 #print("Script Running")
 
@@ -15,34 +20,47 @@ func _ready():
 
 func _physics_process(delta):
 		#print("Phys process")
-		player_movement(delta)
+		movescary(delta)
 		
-func player_movement(delta):
+func movescary(delta):
 	
-	#print("Script Running, speed = " + str(speed))
-	if Input.is_action_pressed("ui_right"):
+	if global.shadow_man_move == true && going_out == true:
 		current_dir = "right"
 		play_anim(1)
 		velocity.x = speed
 		velocity.y = 0
-		#print("Player moving RIGHT, speed = " + str(speed))
+		#print("Position x: ", position.x, " -- SM Script 27")
 		if !playerWalkingAudioStream.playing:
 			playerWalkingAudioStream.play()
-	elif Input.is_action_pressed("ui_left"):
+	if position.x >= -77 && going_out == true:
+			velocity.x = 0
+			velocity.y = 0
+			play_anim(0) # Play idle animation
+			going_out = false
+			speed = 50
+	if global.shadow_man_move == true && going_out == false:
+		print("Move Scary 2 returning -- SM Script 46")
 		current_dir = "left"
 		play_anim(1)
 		velocity.x = -speed
 		velocity.y = 0
-		#print("Player moving LEFT, speed = " + str(speed))
+		print("Position x: ", position.x, " -- SM Script 51")
 		if !playerWalkingAudioStream.playing:
 			playerWalkingAudioStream.play()
-	else:
-		play_anim(0)
+	if position.x <= -158 && going_out == false && shadow_stop == false:
+		print("Move Scary 2 End -- SM Script 55")
+		playerWalkingAudioStream.stop()
+		global.shadow_man_already_triggered = true
+		shadow_stop = true
 		velocity.x = 0
 		velocity.y = 0
-		playerWalkingAudioStream.stop()
+		play_anim(0) # Play idle animation
+		global.shadow_man_move = false
+		global.cutscene = false # End the cutscene
 		
 	move_and_slide()
+		
+		
 		
 func play_anim(movement):
 	var dir = current_dir

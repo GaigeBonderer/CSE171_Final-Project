@@ -37,3 +37,9 @@ func change_scene():
 			print("Change Scene called -- CS Script func 24")
 			get_tree().change_scene_to_file("res://scenes/road_2.tscn")
 			global.finish_changescenes()
+
+
+func _on_spawn_shadow_man_body_entered(body: Node2D) -> void:
+	if body.has_method("player") && global.shadow_man_already_triggered == false:
+		global.cutscene = true;
+		global.shadow_man_move = true

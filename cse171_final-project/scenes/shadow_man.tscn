@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://drowyp8dbrk73" path="res://art/Player/ShadowMan.png" id="1_rats1"]
 [ext_resource type="Script" path="res://scripts/shadow_man.gd" id="2_1bsxj"]
-[ext_resource type="AudioStream" uid="uid://cjlah6n46kam3" path="res://audio/SFX/footsetps.wav" id="3_82bwr"]
+[ext_resource type="AudioStream" uid="uid://cjlah6n46kam3" path="res://SFX/footsetps.wav" id="3_82bwr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_drhin"]
 atlas = ExtResource("1_rats1")

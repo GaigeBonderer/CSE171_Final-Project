@@ -1,10 +1,13 @@
 extends Node
 
+var cutscene = false
+
+var shadow_man_move = false
+var shadow_man_already_triggered = false
+
 var current_scene = "start_screen"
 
 var transition_scene = false
-
-var cutscene = false
 
 var player_exit_road_posx = 0
 var player_exit_road_posy = 0
