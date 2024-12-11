@@ -15,6 +15,7 @@ var moon_already_spotted = false
 var chase_started = false
 
 var enddialogue = false
+var enddialogue_jumpscare = false
 
 var aggro = false
 

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const speed = 200 # Supposed to be 50, higher for testing
+const speed = 50 # Supposed to be 50, higher for testing
 @onready var playerWalkingAudioStream = $AudioStreamPlayer2D_walking
 
 var current_dir = "none"
@@ -24,7 +24,13 @@ func _physics_process(delta):
 	if global.enddialogue == true:
 		global.enddialogue = false
 		global.transition_scene = true
+		global.crash_site_text = true
 		get_tree().change_scene_to_file("res://scenes/crash_site.tscn")
+		global.finish_changescenes()
+	if global.enddialogue_jumpscare == true:
+		global.enddialogue_jumpscare = false
+		global.transition_scene = true
+		get_tree().change_scene_to_file("res://scenes/jump_scare.tscn")
 		global.finish_changescenes()
 	player_movement(delta)
 		
