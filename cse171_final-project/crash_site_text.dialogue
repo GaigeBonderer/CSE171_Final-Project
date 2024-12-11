@@ -1,0 +1,25 @@
+~ crash_site_text
+
+if global.crash_site_text == true:
+	Ego: What.. what happened?
+	Ego: ... Where am I?
+	set global.crash_site_text = false
+	set global.cutscene = false
+
+=> END
+
+~ car_disabled
+
+Ego: This isnt driving anywhere...
+
+=> END
+
+~ shadowman
+
+Ego: What...
+Ego: What was that thing?
+#set global.shadow_man_move = false
+#set global.cutscene = false
+
+=> END
+

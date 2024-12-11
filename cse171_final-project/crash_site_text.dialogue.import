@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bofkkf2f4fhtx"
+path="res://.godot/imported/crash_site_text.dialogue-69847c3ebea4468d3c2059d0e9e2369a.tres"
+
+[deps]
+
+source_file="res://crash_site_text.dialogue"
+dest_files=["res://.godot/imported/crash_site_text.dialogue-69847c3ebea4468d3c2059d0e9e2369a.tres"]
+
+[params]
+
+defaults=true

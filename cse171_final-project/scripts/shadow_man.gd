@@ -55,8 +55,9 @@ func movescary(delta):
 		velocity.x = 0
 		velocity.y = 0
 		play_anim(0) # Play idle animation
+		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "shadowman")
 		global.shadow_man_move = false
-		global.cutscene = false # End the cutscene
+		global.cutscene = false
 		
 	move_and_slide()
 		

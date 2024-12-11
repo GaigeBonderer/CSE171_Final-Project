@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const speed = 200 # Supposed to be 50, higher for testing
+const speed = 50 # Supposed to be 50, higher for testing
 @onready var playerWalkingAudioStream = $AudioStreamPlayer2D_walking
 
 var current_dir = "none"
@@ -14,7 +14,10 @@ func _ready():
 	$AnimatedSprite2D.play("idle_down")
 
 func _physics_process(delta):
-		#print("Phys process")
+		if global.crash_site_text == true && global.crash_site_text_one_time == false:
+			global.crash_site_text_one_time = true
+			DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "crash_site_text")
+			return
 		player_movement(delta)
 		
 func player_movement(delta):

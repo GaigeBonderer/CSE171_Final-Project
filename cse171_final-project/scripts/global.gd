@@ -1,9 +1,12 @@
 extends Node
 
-var cutscene = false
+var cutscene = true  # cutscene specific
 
-var shadow_man_move = false
+var shadow_man_move = false    # Shadow man scene specific
 var shadow_man_already_triggered = false
+
+var crash_site_text = true   #  Dialogue Specific
+var crash_site_text_one_time = false
 
 var current_scene = "start_screen"
 
