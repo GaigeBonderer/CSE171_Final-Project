@@ -47,4 +47,3 @@ func _on_welcome_back_body_entered(body: Node2D) -> void:
 	if global.welcome_back_enetered_already == false && global.player_past_entry == true:
 		global.cutscene = true
 		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "welcome_back")
-	pass # Replace with function body.

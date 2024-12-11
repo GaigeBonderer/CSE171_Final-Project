@@ -20,11 +20,11 @@ func update_music_stats():
 		musicAudioStreamBG.stop()
 
 	
-func _on_trans_road_6_body_entered(body: Node2D) -> void:
+func _on_trans_road_7_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
-		print("Player entered road 7 -- R6 Script func 25")
+		print("Player entered road 6 -- R5 Script func 25")
 		global.transition_scene = true
-		print("global.transition_scene: ", global.transition_scene, " -- R6 Script func 27")
+		print("global.transition_scene: ", global.transition_scene, " -- R5 Script func 27")
 
 func change_scene():
 	if global.transition_scene == true:
@@ -43,7 +43,7 @@ func _on_no_return_body_entered(body: Node2D) -> void:
 		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "no_return")
 
 
-func _on_road_block_body_entered(body: Node2D) -> void:
-	if global.road_blocked_entered_already == false && global.player_past_entry == true:
+func _on_like_maze_body_entered(body: Node2D) -> void:
+	if global.maze_entered_already == false && global.player_past_entry == true:
 		global.cutscene = true
-		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "road_block")
+		DialogueManager.show_example_dialogue_balloon(load("res://crash_site_text.dialogue"), "maze")

@@ -9,6 +9,8 @@ var crash_site_text = true   #  Dialogue Specific
 var crash_site_text_one_time = false
 var player_past_entry = false
 var welcome_back_enetered_already = false
+var road_blocked_entered_already = false
+var maze_entered_already = false
 
 var current_scene = "start_screen"
 
@@ -55,7 +57,42 @@ func finish_changescenes():
 		elif current_scene == "road_4":
 			current_scene = "road_5"
 			player_past_entry = false
-			print("Finish_Changescenes road 4 Trans -- G Script func 51")
+			print("Finish_Changescenes road 5 Trans -- G Script func 51")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+			print("-------------------------------------------------------------------------------")
+		elif current_scene == "road_5":
+			current_scene = "road_6"
+			player_past_entry = false
+			print("Finish_Changescenes road 6 Trans -- G Script func 51")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+			print("-------------------------------------------------------------------------------")
+		elif current_scene == "road_6":
+			current_scene = "road_7"
+			player_past_entry = false
+			print("Finish_Changescenes road 7 Trans -- G Script func 51")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+			print("-------------------------------------------------------------------------------")
+		elif current_scene == "road_7":
+			current_scene = "road_8"
+			player_past_entry = false
+			print("Finish_Changescenes road 8 Trans -- G Script func 51")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+			print("-------------------------------------------------------------------------------")
+		elif current_scene == "road_8":
+			current_scene = "road_9"
+			player_past_entry = false
+			print("Finish_Changescenes road 9 Trans -- G Script func 51")
+			print("transition_scene Status: " + str(transition_scene))
+			print("current_scene Status: " + str(current_scene))
+			print("-------------------------------------------------------------------------------")
+		elif current_scene == "road_9":
+			current_scene = "road_10"
+			player_past_entry = false
+			print("Finish_Changescenes road 10 Trans -- G Script func 51")
 			print("transition_scene Status: " + str(transition_scene))
 			print("current_scene Status: " + str(current_scene))
 			print("-------------------------------------------------------------------------------")

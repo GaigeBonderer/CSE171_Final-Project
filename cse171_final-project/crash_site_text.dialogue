@@ -52,3 +52,19 @@ set global.cutscene = false
 
 => END
 
+~ road_block
+
+Ego: Is someone trying to block the road...
+set global.road_blocked_entered_already = true
+set global.cutscene = false
+
+=> END
+
+~ maze
+
+Ego: Its like a maze...
+set global.maze_entered_already = true
+set global.cutscene = false
+
+=> END
+
