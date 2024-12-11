@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const speed = 50
+const speed = 100 # Supposed to be 50, 100 for testing
 @onready var playerWalkingAudioStream = $AudioStreamPlayer2D_walking
 
 var current_dir = "none"
@@ -20,8 +20,12 @@ func _physics_process(delta):
 func player_movement(delta):
 	
 	#print("Script Running, speed = " + str(speed))
-	
-	if Input.is_action_pressed("ui_right"):
+	if global.cutscene == true:
+		play_anim(0)
+		velocity.x = 0
+		velocity.y = 0
+		playerWalkingAudioStream.stop()
+	elif Input.is_action_pressed("ui_right"):
 		current_dir = "right"
 		play_anim(1)
 		velocity.x = speed
