@@ -12,7 +12,7 @@ var shadow_stop = false
 
 #print("Script Running")
 
-func player():
+func shadow_man():
 	pass
 
 func _ready():

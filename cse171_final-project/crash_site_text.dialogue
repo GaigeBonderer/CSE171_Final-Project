@@ -68,3 +68,22 @@ set global.cutscene = false
 
 => END
 
+~ blood_moon
+
+Ego: The moon...
+Ego: Turned red...
+set global.moon_already_spotted = true
+set global.cutscene = false
+
+=> END
+
+~ being_followed
+
+Ego: ...
+Ego: whats that noise?
+set global.cutscene = false
+set global.chase_started = true
+set global.aggro = true
+
+=> END
+

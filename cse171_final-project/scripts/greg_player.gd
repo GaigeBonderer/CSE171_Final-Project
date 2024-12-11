@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const speed = 200 # Supposed to be 50, higher for testing
+const speed = 50 # Supposed to be 50, higher for testing
 @onready var playerWalkingAudioStream = $AudioStreamPlayer2D_walking
 
 var current_dir = "none"

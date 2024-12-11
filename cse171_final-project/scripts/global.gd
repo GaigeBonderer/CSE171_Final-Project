@@ -11,6 +11,11 @@ var player_past_entry = false
 var welcome_back_enetered_already = false
 var road_blocked_entered_already = false
 var maze_entered_already = false
+var moon_already_spotted = false
+var chase_started = false
+
+
+var aggro = false
 
 var current_scene = "start_screen"
 
